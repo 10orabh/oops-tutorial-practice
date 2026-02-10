@@ -1,25 +1,12 @@
-class Animal:
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
+class Employee:
+    def __init__(self,id,salary,designation):
+        self.id = id
+        self.salary = salary
+        self.designation = designation
 
-    def speak(self):
-        raise NotImplementedError("Subclasses must implement this method")
-class Dog(Animal):
-    def __init__(self, name):
-        super().__init__(name, species="Dog")
+   
 
-    def speak(self):
-        return "Woof!"
     
-class Cat(Animal):
-    def __init__(self, name):
-        super().__init__(name, species="Cat")
+emp1 = Employee(24360,20000,"Assitant_professor")
 
-    def speak(self):
-        return "Meow!"
-# Example usage:
-dog = Dog("Buddy")      
-cat = Cat("Whiskers")
-print(f"{dog.name} says {dog.speak()}")
-print(f"{cat.name} says {cat.speak()}")
+
